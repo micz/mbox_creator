@@ -2,6 +2,7 @@
 
 This guide explains how to use the provided files to run the `mbox_creator` script to generate a test mbox file.
 <br>I'm using this script to create emails to test [ThunderStats](https://github.com/micz/ThunderStats) my statistics add-on for Thunderbird.
+<br>The emails wil be sent and received, also with replies, that will be matched in the same conversation.
 
 There isn't much creativity in the subject, body, or correspondents addresses of the emails, but testing the statistical add-on doesn't require it at the moment. I believe we'll eventually reach the point where we'll perform statistical analysis of the text, but we're not there yet.
 <br>Please feel free to enhance the script with any necessary creativity :smile: and submit a pull request. Thank you!
