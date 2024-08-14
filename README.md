@@ -89,6 +89,17 @@ Run the script with `node mbox_creator.js`.
 
 
 
+## How to import the mbox file in a mail client (Thunderbird example)
+
+Using Thunderbird, you need to locate your profile path. With Thunderbird closed, copy the file to the `Local Folders` directory. Then, open Thunderbird, and you'll find a new folder in the tree view with the name of the file you copied earlier. If needed, move the emails to another folder or to the test account you're using, and you're done.
+
+
+
+
+<br>
+
+
+
 
 ## How to contribute
 
