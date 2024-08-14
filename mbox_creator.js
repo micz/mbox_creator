@@ -9,12 +9,11 @@
  * 
  */
 
-
 const fs = require('fs');
 const path = require('path');
 
 // Configuration variables
-const ownerEmail = "sender@test.com"; // The email address of the mailbox owner
+const ownerEmail = "author@example.com"; // The email address of the mailbox owner
 const numEmailsToday = 5; // The number of emails to create for today
 const numEmailsYesterday = 7; // The number of emails to create for yesterday
 const numEmailsLast7Days = 20; // The number of emails to create for the last 7 days
