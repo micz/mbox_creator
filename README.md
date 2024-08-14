@@ -26,11 +26,13 @@ This guide explains how to use the provided files to run the `mbox_creator` scri
 
 These are the parameters you can change:
 - **`ownerEmail`**: The email address of the mailbox owner.
-  
-   _Example:_
+
+  _Example:_
 ```javascript
    const ownerEmail = "author@example.com";
 ```
+
+<br>
 
 - **`numEmailsToday`**: The number of emails to create for today.
 
@@ -39,6 +41,8 @@ These are the parameters you can change:
 const numEmailsToday = 5;
 ```
 
+<br>
+
 - **`numEmailsYesterday`**: The number of emails to create for yesterday.
 
   _Example:_
@@ -46,12 +50,16 @@ const numEmailsToday = 5;
 const numEmailsYesterday = 7;
 ```
 
+<br>
+
 - **`numEmailsLast7Days`**: The number of emails to create for the last 7 days.
 
   _Example:_
 ```javascript
 const numEmailsLast7Days = 30;
 ```
+
+<br>
 
 - **`mboxFileName`**: The name of the mbox file to create.
 
