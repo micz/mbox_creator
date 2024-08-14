@@ -16,7 +16,7 @@ const path = require('path');
 const ownerEmail = "author@example.com"; // The email address of the mailbox owner
 const numEmailsToday = 5; // The number of emails to create for today
 const numEmailsYesterday = 7; // The number of emails to create for yesterday
-const numEmailsLast7Days = 20; // The number of emails to create for the last 7 days
+const numEmailsLast7Days = 30; // The number of emails to create for the last 7 days
 const mboxFileName = 'test_mailbox'; // The name of the mbox file to create
 
 // To store received emails for potential replies
