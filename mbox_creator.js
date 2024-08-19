@@ -29,15 +29,33 @@ function getRandomDateWithinRange(startDate, endDate) {
 }
 
 // Function to generate a random Message-ID
-function generateMessageID(index) {
-    return `<message-${index}@example.com>`;
+function generateMessageID() {
+    let random_index = generateRandomIndex();
+    return `<message-${random_index}@example.com>`;
+}
+
+function generateRandomIndex() {
+    // Define possible characters (uppercase, lowercase, digits)
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let randomIndex = '';
+
+    // Define the length of the ID (for example, 16 characters long)
+    const length = 16;
+
+    // Loop to generate a string of random characters
+    for (let i = 0; i < length; i++) {
+        const randomCharacter = characters.charAt(Math.floor(Math.random() * characters.length));
+        randomIndex += randomCharacter;
+    }
+
+    return randomIndex;
 }
 
 // Function to create a test email
 function createTestEmail(i, date, isSent, isReply = false, originalEmail = null) {
     let from, to, subject, body, messageId, inReplyTo, references;
 
-    messageId = generateMessageID(i);
+    messageId = generateMessageID();
 
     if (isReply && originalEmail) {
         from = ownerEmail;
@@ -106,7 +124,7 @@ function createMboxFile() {
                     from: `sender${emailCounter}@example.com`,
                     subject: `Test Email ${emailCounter}`,
                     body: `This is the body of test email number ${emailCounter}.`,
-                    messageId: generateMessageID(emailCounter),
+                    messageId: generateMessageID(),
                     references: null
                 });
             }
@@ -137,7 +155,7 @@ function createMboxFile() {
                     from: `sender${emailCounter}@example.com`,
                     subject: `Test Email ${emailCounter}`,
                     body: `This is the body of test email number ${emailCounter}.`,
-                    messageId: generateMessageID(emailCounter),
+                    messageId: generateMessageID(),
                     references: null
                 });
             }
@@ -164,7 +182,7 @@ function createMboxFile() {
                     from: `sender${emailCounter}@example.com`,
                     subject: `Test Email ${emailCounter}`,
                     body: `This is the body of test email number ${emailCounter}.`,
-                    messageId: generateMessageID(emailCounter),
+                    messageId: generateMessageID(),
                     references: null
                 });
             }
